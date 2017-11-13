@@ -1,0 +1,16 @@
+Steps:
+1) Pick any three authors with txt file size in the range of 150K-200K words
+(for e.g)
+>>> emma = nltk.corpus.gutenberg.words('austen-emma.txt')
+>>> len(emma)
+192427
+2) Refer to the three txt files of Step(1) As C1, C2, C3
+3) Build unigram , bigram & trigram models for C1, C2 and C3
+4) Compute the Cross Entropy values for C1, C2 and C3, w.r.t each of the 3 models
+5) Given a set of 5 - 25 continuous sentences, randomly picked , from C1 or C2 or C3 as
+anonymous text , assign the probability of the true authorship to the text from the three
+models for C1, C2 and C3.
+6) Use the models for C1, C2 and C3 to produce 3 sets of generated text, of 100-125
+words each. Comment on the similarity of the generated text with the original corpora
+namely C1, C2 and C3.
+
